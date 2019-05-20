@@ -4,6 +4,11 @@ import java.util.ArrayList;
 
 public class Folha {
     private static ArrayList<Carreiras> funcionarios = new ArrayList<>();
+
+
+
+
+
     public double CalcularDescontoIRPF(double salario) {
 
         double desconto = 0.0;
