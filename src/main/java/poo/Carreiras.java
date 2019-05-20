@@ -1,8 +1,8 @@
 package poo;
 
 public  class Carreiras {
-    public String nome;
-    public String cpf;
+    protected String nome;
+    protected String cpf;
     public double salarioBase;
 
     public Carreiras(String nome, String cpf, double salarioBase) {
@@ -24,9 +24,8 @@ public  class Carreiras {
         return "Carreiras{" +
                 "nome='" + nome + '\'' +
                 ", cpf='" + cpf + '\'' +
-                ", salarioBase=" + salarioBase +
+                ", salarioBase=" + calcularSalario() +
                 '}';
     }
-    //private void horasTrabalhadas();
 
 }

@@ -2,8 +2,8 @@ package poo;
 
 public class Comissionado extends Carreiras {
 
-    private int vendasRealizadas;
-    private double porcentagem;
+    protected int vendasRealizadas;
+    protected double porcentagem;
 
     public Comissionado(String nome, String cpf, double salarioBase, int qtdVendas,double bonificacao) {
         super(nome, cpf, salarioBase);
@@ -11,5 +11,9 @@ public class Comissionado extends Carreiras {
         this.porcentagem = bonificacao;
     }
 
+    @Override
+    public double calcularSalario() {
+        return vendasRealizadas*porcentagem;
+    }
 
 }

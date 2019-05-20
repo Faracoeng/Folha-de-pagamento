@@ -9,4 +9,9 @@ public class Horista extends Carreiras {
         this.horasDeTrabalho = qtdHoras;
         this.valorHora = bonus;
     }
+
+    @Override
+    public double calcularSalario() {
+        return super.calcularSalario()+(horasDeTrabalho * valorHora);
+    }
 }
