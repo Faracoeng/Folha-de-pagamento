@@ -13,7 +13,7 @@ public class Folha {
 
     private void aumentaSalario(ArrayList<Carreiras> lista){
         for(Carreiras e: lista){
-            e.aumentarSalarioBase();
+
         }
     }
 

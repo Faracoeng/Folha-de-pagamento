@@ -1,17 +1,23 @@
 package poo;
 
 public class Horista extends Carreiras {
-    public double horasDeTrabalho;
-    public double valorHora;
+    private double horasDeTrabalho;
+    private double valorHora;
+    private final String  carreira = "Horista";
 
-    public Horista(String nome, String cpf, double salarioBase, double qtdHoras, double bonus) {
-        super(nome, cpf, salarioBase);
-        this.horasDeTrabalho = qtdHoras;
-        this.valorHora = bonus;
+    public Horista(String nome, String cpf, double horasDeTrabalho, double valorHora, double salarioBase) {
+        this.horasDeTrabalho = horasDeTrabalho;
+        this.valorHora = valorHora;
+        salarioBase = salarioBase;
+    }
+
+    @Override
+    public String getCarreira() {
+        return this.carreira;
     }
 
     @Override
     public double calcularSalario() {
-        return super.calcularSalario()+(horasDeTrabalho * valorHora);
+        return ((horasDeTrabalho * valorHora) + salarioBase);
     }
 }
