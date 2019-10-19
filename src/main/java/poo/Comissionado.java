@@ -9,6 +9,7 @@ public class Comissionado extends Carreiras {
     public Comissionado(int vendasRealizadas, double porcentagem) {
         this.vendasRealizadas = vendasRealizadas;
         this.porcentagem = porcentagem;
+        this.nomeCarreira = "Comissionado";
     }
 
     @Override
@@ -25,7 +26,11 @@ public class Comissionado extends Carreiras {
 
     @Override
     public String toString() {
-        return null;
+        return "Comissionado{" +
+                "vendasRealizadas=" + vendasRealizadas +
+                ", porcentagem=" + porcentagem +
+                ", nomeCarreira='" + nomeCarreira + '\'' +
+                ", salarioBase=" + salarioBase +
+                '}';
     }
-
 }
