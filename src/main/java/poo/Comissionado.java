@@ -23,4 +23,9 @@ public class Comissionado extends Carreiras {
         return vendasRealizadas*porcentagem;
     }
 
+    @Override
+    public String toString() {
+        return null;
+    }
+
 }

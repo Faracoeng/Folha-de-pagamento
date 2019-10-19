@@ -2,9 +2,8 @@ package poo;
 
 import java.util.ArrayList;
 
-public class Folha {
+public class Folha{
     //private static
-
 
     public Folha(Carreiras colaborador) {
         ArrayList<Carreiras> funcionarios = new ArrayList<>();
@@ -13,7 +12,7 @@ public class Folha {
 
     private void aumentaSalario(ArrayList<Carreiras> lista){
         for(Carreiras e: lista){
-
+            // usar aqui stanceof para compara funcionários
         }
     }
 

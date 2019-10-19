@@ -20,4 +20,9 @@ public class Horista extends Carreiras {
     public double calcularSalario() {
         return ((horasDeTrabalho * valorHora) + salarioBase);
     }
+
+    @Override
+    public String toString() {
+        return null;
+    }
 }
