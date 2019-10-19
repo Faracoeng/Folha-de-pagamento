@@ -4,4 +4,6 @@
 
 #### Diagrama UML:
 
+![UML](GerarFolhaPagamento.png)
+
 

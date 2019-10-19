@@ -4,7 +4,7 @@ public class Horista extends Carreiras {
     private double horasDeTrabalho;
     private double valorHora;
 
-    public Horista( double fixo, double horasDeTrabalho, double valorHora) {
+    public Horista( double fixo, int horasDeTrabalho, double valorHora) {
         this.horasDeTrabalho = horasDeTrabalho;
         this.valorHora = valorHora;
         this.salarioBase = fixo;

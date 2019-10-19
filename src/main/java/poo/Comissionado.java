@@ -13,8 +13,6 @@ public class Comissionado extends Carreiras {
     }
 
     @Override
-
-
     public String getCarreira() {
         return null;
     }
