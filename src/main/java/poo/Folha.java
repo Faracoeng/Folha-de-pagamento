@@ -3,23 +3,24 @@ package poo;
 import java.util.ArrayList;
 
 public class Folha{
-    //private static
+    private ArrayList<Carreiras> lista;
 
-    public Folha(Carreiras colaborador) {
-        ArrayList<Carreiras> funcionarios = new ArrayList<>();
-        funcionarios.add(colaborador);
+    public Folha() {
+        ArrayList<Carreiras> lista = new ArrayList();
+
     }
 
-    private void aumentaSalario(ArrayList<Carreiras> lista){
+    private void aumentaSalario(){
         for(Carreiras e: lista){
-            // usar aqui stanceof para compara funcionários
+           if (e instanceof ComissionadoEfetivo){       //Aumenta salário base apenas de Comissionado efetivo
+               ((ComissionadoEfetivo) e).aumentarSalarioBase();
+           }
         }
     }
 
     public void geraFolha(ArrayList<Carreiras> lista){
         for(Carreiras e: lista){
-            e.toString();
-            System.out.println("------------------");
+            System.out.println(e.nomeCarreira +": "+ e.calcularSalario());
         }
     }
 }

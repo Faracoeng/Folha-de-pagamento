@@ -24,4 +24,8 @@ public class MensalFixo extends Carreiras {
                 ", salarioBase=" + salarioBase +
                 '}';
     }
+
+
+
+
 }
