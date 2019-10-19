@@ -3,17 +3,17 @@ package poo;
 public class Horista extends Carreiras {
     private double horasDeTrabalho;
     private double valorHora;
-    private final String  carreira = "Horista";
 
-    public Horista(String nome, String cpf, double horasDeTrabalho, double valorHora, double salarioBase) {
+    public Horista( double fixo, double horasDeTrabalho, double valorHora) {
         this.horasDeTrabalho = horasDeTrabalho;
         this.valorHora = valorHora;
-        salarioBase = salarioBase;
+        this.salarioBase = fixo;
+        this.nomeCarreira = "Horista";
     }
 
     @Override
     public String getCarreira() {
-        return this.carreira;
+        return this.nomeCarreira;
     }
 
     @Override
@@ -23,6 +23,11 @@ public class Horista extends Carreiras {
 
     @Override
     public String toString() {
-        return null;
+        return "Horista{" +
+                "horasDeTrabalho=" + horasDeTrabalho +
+                ", valorHora=" + valorHora +
+                ", nomeCarreira='" + nomeCarreira + '\'' +
+                ", salarioBase=" + salarioBase +
+                '}';
     }
 }
