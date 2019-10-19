@@ -21,7 +21,7 @@ public class Comissionado extends Carreiras {
 
     @Override
     public double calcularSalario() {
-        return vendasRealizadas*porcentagem;
+        return (vendasRealizadas*porcentagem) - this.vendasRealizadas;
     }
 
     @Override
